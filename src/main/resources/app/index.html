@@ -4,10 +4,41 @@
 	<title>Index</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
-	<div>Hello</div>
+	<header>
+		<div class="menu">
+			<ol>
+				<li id="function-menu-item">Függvény</li><li>Azonnal kiértékelt függvény</li>
+			</ol>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div id="function-example" class="example">
+				<h2>Code</h2>
+				<div class="code">
+<pre>
+function hello() {
+	console.log('Hello');
+}
+</pre>
+				</div>
+				<div class="result-holder">
+					<h2 class="try-button">Try</h2>
+					<div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/function-example.js"></script>
 </body>
 </html>

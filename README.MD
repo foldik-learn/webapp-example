@@ -60,3 +60,5 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 Mivel az ```MvcConfig``` a ```WebMvcConfigurerAdapter```-ból származik le ezért a **_Spring Boot_** rájön, hogy a frontent kiszolgálásához szükséges rész konfigurálásához lesz majd ez jó. Az osztályban lévő kód egyébként annyit csinál, hogy a **js** és **css** tartalmakat, amit a **html** tartalom miatt a böngésző kérni fog az ```app/css``` és ```app/js``` mappákból fogja kiszolgálni.
 
 * ```src/main/java/com/foldik/controllers/HomeController.java```: Itt a **_Spring Boot_** azt látja, hogy ez egy ```@Controller``` annotációval ellátott osztály, aminek van egy metódusa, amin van egy ```@RequestMapping("/")``` annotáció. Ebből a Spring tudni fogja, hogy a http://localhost:8080/ url esetén ezt az osztályt kell meghívnia és a visszaadott oldalt kell kiszolgálni, ami esetünkben az **index.html** (mivel **html** módban vagyunk ezért a fájl kiterjesztése nem kell).
+
+## Frontend
