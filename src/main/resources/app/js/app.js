@@ -16,17 +16,18 @@ $(document).ready(function() {
 });
 
 app.mapExample = function(menuId, holderId, fun) {
+    $('#' + holderId + ' .result-holder .try-button').click(function() {
+        setTimeout(function() {
+            app.activeExampleResult.empty();
+            fun();
+        }, 300);
+    });
     $('#' + menuId).click(function() {
         app.activeExample.css('display', 'none');
         app.activeExampleResult.empty();
         app.activeExample = $('#' + holderId);
-        app.activeExample.css('display', 'inline-block');
         app.activeExampleResult = $('#' + holderId + ' .result-holder div');
-        $('#' + holderId + ' .result-holder .try-button').click(function() {
-            setTimeout(function() {
-                app.activeExampleResult.empty();
-                fun();
-            }, 300);
-        });
+        app.activeExampleResult.empty();
+        app.activeExample.css('display', 'inline-block');
     })
 }
